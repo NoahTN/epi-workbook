@@ -1,0 +1,1 @@
+Solutions and notes for the corresponding Leetcode problems to those found in the Elements of Programming Interviews, in Python. Made for personal use, but feel free to take inspiration. Will add table of contents.
