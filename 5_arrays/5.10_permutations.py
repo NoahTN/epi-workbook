@@ -14,6 +14,6 @@ class Solution:
                # restore nums to previous state
                nums[start], nums[i] = nums[i], nums[start]
 
-        ans = []
+        result = []
         backtrack(0, len(nums))
-        return ans
+        return result
