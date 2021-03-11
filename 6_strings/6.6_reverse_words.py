@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/reverse-words-in-a-string/submissions/
+# https://leetcode.com/problems/reverse-words-in-a-string
 # O(n), O(n)
 # ! Strings are immutable in Python so a space complexity O(1) is not possible
 

@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/valid-palindrome/submissions/
+# https://leetcode.com/problems/valid-palindrome
 # O(n), O(1)
 
 class Solution:
