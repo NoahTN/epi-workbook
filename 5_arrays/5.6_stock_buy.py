@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/sort-colors/
+# https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 # O(n), O(1)
 
 class Solution:
