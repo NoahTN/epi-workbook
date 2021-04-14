@@ -9,15 +9,15 @@ class Solution:
       cur = ""
 
       while i < len(s):
-            if s[i] == ' ':
-                  if cur:
-                        words.append(cur)
-                        cur = ""
-            else:
-                  cur += s[i]
-            i+=1
+         if s[i] == ' ':
+               if cur:
+                     words.append(cur)
+                     cur = ""
+         else:
+               cur += s[i]
+         i+=1
 
       if cur:
-            words.append(cur)
+         words.append(cur)
 
       return ' '.join(reversed(words))
