@@ -1,3 +1,6 @@
+# https://leetcode.com/problems/design-circular-queue
+# O(1), O(1)
+
 class MyCircularQueue:
 
     def __init__(self, k):
