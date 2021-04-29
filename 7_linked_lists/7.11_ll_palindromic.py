@@ -6,17 +6,20 @@ class Solution:
    # Modifies the linked list
    def isPalindrome(self, head: ListNode) -> bool:
       slow = fast = head
+      # Split into halves
       while fast and fast.next:
          fast, slow = fast.next.next, slow.next
       
+      # Reverse second half
       prev = None
       while slow:
          slow.next, prev, slow = prev, slow, slow.next
-         
+
+      # Iterate and compare first half vs reversed second   
       curr = head
       while prev:
          if prev.val != curr.val:
-               return False
+            return False
          prev = prev.next
          curr = curr.next
       

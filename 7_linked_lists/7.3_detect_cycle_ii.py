@@ -1,7 +1,6 @@
 # https://leetcode.com/problems/linked-list-cycle-ii/
 # O(n+k), O(1)
 
-
 class Solution:
     def detectCycle(self, head: ListNode) -> ListNode:
       slow, fast = head, head
