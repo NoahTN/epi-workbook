@@ -1,3 +1,5 @@
+# O(logn), O(1)
+
 def search_first_of_k(A, k):
    left, right = 0, len(A)-1
    result = -1
