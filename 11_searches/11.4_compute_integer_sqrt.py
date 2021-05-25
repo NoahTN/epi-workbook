@@ -1,3 +1,5 @@
+# O(logn). O(1)
+
 def square_root(n):
    left, right = 0, n
    
