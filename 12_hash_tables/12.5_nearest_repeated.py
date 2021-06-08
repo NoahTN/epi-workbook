@@ -1,3 +1,5 @@
+# O(n), O(n)
+
 def nearest_repeated(arr):
    result = float('inf')
    pos_dict = {}
