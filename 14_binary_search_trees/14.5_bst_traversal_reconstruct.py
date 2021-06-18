@@ -1,4 +1,3 @@
-
 # O(n), O(1)
 def bst_pre_reconstruct(preorder):
    # For use as global variable
@@ -16,11 +15,7 @@ def bst_pre_reconstruct(preorder):
 
    return construct(float('-inf'), float('inf'))
    
-
-
-
-
-
+# O(n). O(1)
 def bst_post_reconstruct(postorder):
    pos = [-1]
    def construct(lower, upper):
