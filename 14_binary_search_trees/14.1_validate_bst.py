@@ -6,15 +6,16 @@ class Solution:
       if not root:
          return True
       stack = []
-      pre = None
+      prev = None
       
       while root or stack:
+         # Iterative inorder traversal
          while root:
             stack.append(root)
             root = root.left
          root = stack.pop()
-         if pre and root.val <= pre.val:
+         if prev and root.val <= prev.val:
             return False
-         pre = root
+         prev = root
          root = root.right
       return True
