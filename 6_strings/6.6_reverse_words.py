@@ -5,17 +5,15 @@
 class Solution:
    def reverseWords(self, s: str) -> str:
       words = []
-      i = 0
       cur = ""
 
-      while i < len(s):
+      for i in range(len(s)):
          if s[i] == ' ':
-               if cur:
-                     words.append(cur)
-                     cur = ""
+            if cur:
+               words.append(cur)
+               cur = ""
          else:
-               cur += s[i]
-         i+=1
+            cur += s[i]
 
       if cur:
          words.append(cur)
