@@ -7,15 +7,15 @@ class Solution:
          return None
       
       pivot = random.choice(nums)
-      left =  [x for x in nums if x > pivot]
-      mid  =  [x for x in nums if x == pivot]
-      right = [x for x in nums if x < pivot]
+      greater =  [x for x in nums if x > pivot]
+      equal  =  [x for x in nums if x == pivot]
+      less = [x for x in nums if x < pivot]
       # Target is in numbers greater than pivot, recurse
-      if k <= len(left):
-         return self.findKthLargest(left, k)
+      if k <= len(greater):
+         return self.findKthLargest(greater, k)
       # Target is in numbers less than pivot, recurse
-      elif k > len(left) + len(mid):
-         return self.findKthLargest(right, k - len(left) - len(mid))
+      elif k > len(greater) + len(equal):
+         return self.findKthLargest(less, k - len(greater) - len(equal))
       # Target found
       else:
-         return mid[0]
+         return equal[0]
